@@ -2,10 +2,10 @@ package org.lessons.java.one;
 
 public class EsDue {
 
-    void faiVolare(Volare animale) {
+    static void faiVolare(Volare animale) {
         animale.vola();
     }
-    void faiNuotare(Nuotare animale) {
+    static void faiNuotare(Nuotare animale) {
         animale.nuotare();
     }
     public static void main(String[] args) {
@@ -22,9 +22,9 @@ public class EsDue {
 
         for ( Animali an: animali) {
             if ( an instanceof Volare) {
-                ((Volare) an).vola();
+                faiVolare((Volare) an);
             } else {
-                ((Nuotare) an).nuotare();
+                faiNuotare((Nuotare)an);
             }
         }
 
