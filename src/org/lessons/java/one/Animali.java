@@ -9,4 +9,5 @@ public abstract class Animali {
 
     public abstract void mangia();
 
+
 }
